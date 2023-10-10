@@ -48,6 +48,7 @@ namespace XLuaFramework {
             ResMgr.GetInstance().Init();
             Debug.Log("loading view active in main");
             var loadingViewTrans = GameObject.Find("UICanvas/Top/LoadingView");
+            //var loadingViewTrans = GameObject.Find("UICanvas/Top/Image");
             loadingViewTrans.gameObject.SetActive(true);
             loadingView = loadingViewTrans.GetComponent<LoadingView>();
             JumpToState(State.CheckExtractResource);

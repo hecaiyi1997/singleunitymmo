@@ -98,7 +98,7 @@ function LoginCreateRoleView:UpdateRoleMesh( sex )
 	local show_data = {
 		showType = UILooksNode.ShowType.Role,
 		showRawImg = self.select_role_con_raw,
-		body = 1,
+		body = 1, --1改成3，且必须女的1203，头发1201
 		hair = 1,
 		career = sex==1 and 1 or 2,
 		canRotate = true,
